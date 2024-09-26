@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mrgeovesanimalistic",
+	"version": "${version}",
+	"name": "Mr.Geoves' Animalistic",
+	"description": "adds more uses for vanilla mobs and adds in its own, with said uses at least being consumption.",
+	"authors": [
+		"Mr.Geoves"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/geovesanimalistic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mrgeoves.mrgeovesanimalistic.MrGeovesAnimalistic"
+		],
+		"fabric-datagen": [
+			"net.mrgeoves.mrgeovesanimalistic.MrGeovesAnimalisticDataGenerator"
+		],
+		"client": [
+			"net.mrgeoves.mrgeovesanimalistic.MrGeovesAnimalisticModClient"
+		]
+	},
+	"mixins": [
+		"geovesanimalistic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
